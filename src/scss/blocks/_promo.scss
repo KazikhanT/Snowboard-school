@@ -1,0 +1,77 @@
+.promo {
+  background: radial-gradient(#487CAC, #2E5386);
+
+  &_section {
+    position: relative;
+    padding-top: 34px;
+  }
+  &__main-img {
+    position: absolute;
+    z-index: 50;
+    top: 335px;
+    width: 100%;
+  }
+
+  &__header {
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    max-width: 166px;
+    max-height: 61px;
+  }
+  &__nav-bar {
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style-type: none;
+
+      li:not(:last-child) {
+        margin-right: 23px;
+      }
+    }
+  }
+  &__link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  &__titles {
+    margin-top: 93px;
+    z-index: 10;
+  }
+  &__top-title,
+  &__main-title {
+    margin: 0;
+    color: #65ADCE;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Catamaran Heavy';
+  }
+
+  &__top-title {
+    font-size: 30px;
+  }
+  &__main-title {
+    margin-top: 44px;
+    font-size: 160px;
+    line-height: 150px;
+  }
+
+  &__booking {
+    margin-top: 152px;
+    position: relative;
+    z-index: 100;
+    max-width: 600px;
+
+    &-descr {
+      color: #FEFEFE;
+      font-size: 20px;
+      margin-bottom: 50px;
+    }
+  }
+}

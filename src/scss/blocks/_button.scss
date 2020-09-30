@@ -1,0 +1,19 @@
+.button {
+  color: white;
+  background-color: $firstColor;
+  text-transform: uppercase;
+  font-family: 'Catamaran Heavy';
+  font-size: 16px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+
+  &_big {
+    width: 241px;
+    height: 61px;
+  }
+  &_mini {
+    width: 121px;
+    height: 51px;
+  }
+}

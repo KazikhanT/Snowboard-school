@@ -1,0 +1,11 @@
+.section-title {
+  margin: 0;
+  font-size: 55px;
+  font-family: 'Catamaran Heavy';
+  text-transform: uppercase;
+  text-align: center;
+
+  &_left {
+    text-align: left;
+  }
+}

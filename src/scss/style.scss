@@ -1,0 +1,24 @@
+@import "libs/fonts";
+@import "libs/normalize";
+
+* {
+    box-sizing: border-box;
+    font-family: 'Muli Regular';
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+$firstColor: #FF690F;
+
+@import "./blocks/promo";
+@import "./blocks/button";
+@import "./blocks/offers";
+@import "./blocks/crew";
+@import "./blocks/section-title";
+@import "./blocks/school";
+@import "./blocks/reviews";
+@import "./blocks/slider";
+@import "./blocks/contacts";

@@ -1,0 +1,35 @@
+.school {
+  background: url('../images/school_bg.png') center (center / cover) no-repeat;
+
+  &_section {
+    padding: 100px 0;
+  }
+
+  &__article {
+    max-width: 600px;
+
+    &-text {
+      color: #2B2B2B;
+    }
+  }
+
+  &__achievements {
+    max-width: 600px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__achievement {
+    &-num {
+      color: $firstColor;
+      font-family: 'Catamaran Heavy';
+      font-size: 60px;
+      margin: 0;
+    }
+    &-descr {
+      color: #2B2B2B;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+}

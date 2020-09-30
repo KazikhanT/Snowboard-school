@@ -1,0 +1,57 @@
+.slider {
+
+  &__wrapper {
+    position: relative;    
+  }
+  &__slide {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    max-width: 640px;
+    text-align: center;
+    transition: opacity 0.5s;
+
+    &_active {
+      opacity: 1;
+    }
+
+    &-img {
+      max-width: 131px;
+      max-height: 131px;
+    }
+    &-name {
+      margin: 0;
+      margin-top: 23px;
+      font-size: 18px;
+      font-family: 'Catamaran Heavy';
+      text-transform: uppercase;
+    }
+    &-review {
+      color: #565656;
+      font-size: 18px;
+    }
+  }
+
+  &__dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: default;
+  }
+  &__dot {
+    margin: 0 5px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #D1D8DF;
+    cursor: pointer;
+    transition: background-color 0.5s;
+
+    &_active {
+      background-color: $firstColor;
+    }
+  }
+}

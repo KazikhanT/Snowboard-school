@@ -1,0 +1,56 @@
+.contacts {
+  min-height: 200px;
+  background-color: #2F2F2F;
+
+  &_section {
+    padding: 30px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+    & > * {
+      position: relative;
+      margin: 10px;
+      width: 300px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+
+      &::before {
+        position: absolute;
+        left: -25px;
+      }
+    }
+
+    &-phone::before {
+      content: url('../icons/contact/phone.png');
+    }
+    &-addres::before {
+      content: url('../icons/contact/point.png');
+    }
+    &-mail::before {
+      content: url('../icons/contact/message.png');
+    }
+    &-time::before {
+      content: url('../icons/contact/time.png');
+    }
+  }
+  &__social {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
